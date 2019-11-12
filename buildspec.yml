@@ -11,6 +11,8 @@ phases:
     commands:
       - echo Logging in to Amazon ECR....
       - aws --version
+      - CI_REGION = <%= ENV['CI_REGION'] %>
+      - REPO_URL = <%= ENV['REPO_URL'] %>
       - $(aws ecr get-login --no-include-email --region $CI_REGION)
 
       - echo "including rubygems.org as repo"
