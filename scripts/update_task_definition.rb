@@ -31,7 +31,7 @@ base_td = {
     }
   ],
   placement_constraints: [],
-  memory: "1024",
+  memory: "512",
   cpu: "512",
   volumes: []
 }
